@@ -27,21 +27,22 @@
   </nav>
 
     <!-- Contact Form -->
-    <section>
-        <h1>Contact Us</h1>
-        <form>
-            <label for="name">Name:</label> <!-- forr "name" is to keep reference id for the label -->
-            <input type="text" id="name" name="name" />  <!-- text field id "name", keeps a reference. name "name" as a key for when form submitted -->
+  <section>
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-            <label for="message">Message:</label>
-            <input id="message" name="message" rows="5" ></input>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="successMessage" class="success"></p>
+  </section>
 
     <!-- Footer -->
     <footer>
