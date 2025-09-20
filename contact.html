@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Header with the logo -->
+    <header>
+        <img src="images/logo.png" alt="Site Logo" class="logo" width="50" height="50" />
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="index.html#info">Information</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Form -->
+    <section>
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Name:</label> <!-- for "name" is to keep reference id for the label -->
+            <input type="text" id="name" name="name" />  <!-- text field id "name", keeps a reference. name "name" as a key for when form submitted -->
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="message">Message:</label>
+            <input id="message" name="message" rows="5" ></input>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p> The copy right stuff can be added here</p>
+    </footer>
+
+</body>
+</html>
