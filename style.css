@@ -88,12 +88,25 @@ footer {
     margin-top: 25px;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
-/* checks the width of the screen and makes changes to the navigation */
-@media (max-width: 750px) { /* Less than 750px in width = coloumns activated for nav */
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
 
+@media (max-width: 750px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    flex-direction: column;
+    display: none;
+  }
+  .nav-links.show {
+    display: flex;
+  }
 }
